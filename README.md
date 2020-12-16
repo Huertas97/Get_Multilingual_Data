@@ -4,7 +4,7 @@
  
  * [Repository purpose](#repository-purpose)
  * [Scripts](#scripts)
- * [# Type of Multilingual Data](#type-of-multilingual-data)
+ * [Type of Multilingual Data](#type-of-multilingual-data)
  * [Languages supported](#languagues-supported)
  * [How to use](#how-to-use)
  * [References](#references)
