@@ -4,6 +4,8 @@
  
  * [Repository purpose](#repository-purpose)
  * [Scripts](#scripts)
+ * [# Type of Multilingual Data](#type-of-multilingual-data)
+ * [Languages supported](#languagues-supported)
  * [How to use](#how-to-use)
  * [References](#references)
  
@@ -32,7 +34,7 @@ The multilingual data that can be extracted with the scripts from these reposito
 The same sentence in different languages should theorically have the same vectorization. However, there might be some variability among languages. Including this variability in the data to fit the PCA is highly recommended. Parallel data from TED2020 and OPUS-NewsCommentart are used for this purpose. As we just mentioned, parallel data is extremely useful for including the language embedding representation variability in the PCA. However, introducing a specific set of sentences for each language is also required. WikiMatrix sentences ensures that PCA includes the specific representation for each language. 
 
 
-# Languages
+# Languages supported
 
 Each data set used has a range of available languages. The most limited data set is OPUS-NewsCommentary with 15 languages: ar, cs, de, en, es, fr, hi, it, ja, nl, pl, pt, ru, tr, zh. All the official languages acronyms can be consulted [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). 
 TED2020 and WikiMatrix support more than 100 languages. 
