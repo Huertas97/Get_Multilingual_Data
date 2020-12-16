@@ -22,7 +22,7 @@ The repository is composed of three scripts:
 
 * `get_wikimatrix_sentences.py`: This script automatically downloads WikiMatrix corpus for the languages selected. The WikiMatrix corpus is a crawl of mined sentences from Wikipedia in  different languages. With this script the user can select the amount of sentences and the languages desired. We only used pairs with scores above 1.075, as pairs below this threshold were often of bad quality.
 
-All of these scripts are adapted from [Sentence Transformers](https://github.com/UKPLab/sentence-transformers){:target="_blank"} library. 
+All of these scripts are adapted from [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) library. 
 
 
 # Type of Multilingual Data
