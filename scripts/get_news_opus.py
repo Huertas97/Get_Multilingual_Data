@@ -18,7 +18,7 @@ Requirements:
         $ pip install opustools
 
 
-@author: alvar
+@author: Álvaro Huertas García
 """
 
 from opustools import OpusRead
