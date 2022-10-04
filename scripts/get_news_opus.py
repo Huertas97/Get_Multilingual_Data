@@ -37,6 +37,7 @@ parser = OptionParser(add_help_option=False)
 parser.add_option('-n', '--n_sentences', type='int', help='Number of sentences to retrieve')
 parser.add_option('-l', '--languages', help='Languages ​​from which we extract sentences')
 parser.add_option('-h', '--help', action='store_true', help='Show this help message and exit.')
+parser.add_option('-c', '--corpus_name', type= str, help='name of the corpus in OPUS')
 
 (options, args) = parser.parse_args()
 
@@ -71,7 +72,13 @@ if not options.n_sentences or not options.languages or options.help:
 
 languages = options.languages.split(",")
 print("Recovering OPUS-NewsCommentary sentences for languages: {}".format(" ".join(languages)))
-corpora = ['News-Commentary']
+
+if not options.corpus_name:
+  corpora = ['WMT-News']
+  print(f'Using {corpora}')
+else:
+  corpora = [options.corpus_name]
+  print(f'Using {corpora}')
 source_languages = ['en']      # Source language
 target_languages = languages   # New languages for parallel data
 
